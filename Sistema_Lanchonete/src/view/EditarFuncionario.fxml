@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EditarFuncionarioController">
+   <children>
+      <TextField fx:id="tNome" layoutX="226.0" layoutY="151.0" promptText="Nome" />
+      <TextField fx:id="tSenha" layoutX="226.0" layoutY="188.0" promptText="Senha" />
+      <TextField fx:id="tId" disable="true" editable="false" layoutX="226.0" layoutY="222.0" promptText="Id" />
+      <ChoiceBox fx:id="cSelectCargo" layoutX="225.0" layoutY="258.0" prefWidth="150.0" />
+      <Button fx:id="bConfirma" layoutX="477.0" layoutY="338.0" mnemonicParsing="false" onAction="#aConfirma" text="Confirmar" />
+      <Button fx:id="bCancela" layoutX="388.0" layoutY="338.0" mnemonicParsing="false" onAction="#aCancela" text="Cancelar" />
+      <Label layoutX="232.0" layoutY="100.0" text="Editar funcionario">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="bPuxar" layoutX="300.0" layoutY="338.0" mnemonicParsing="false" onAction="#aPuxar" text="Puxar Info" />
+   </children>
+</Pane>

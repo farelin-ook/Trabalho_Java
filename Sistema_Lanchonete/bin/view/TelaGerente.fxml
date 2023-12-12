@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaGerenteController">
+   <children>
+      <ToolBar layoutX="245.0" layoutY="157.0" orientation="VERTICAL" prefHeight="124.0" prefWidth="110.0">
+        <items>
+          <Button fx:id="bVendas" mnemonicParsing="false" onAction="#acessarVendas" prefHeight="25.0" prefWidth="100.0" text="Vendas" />
+            <Button fx:id="bFuncionarios" mnemonicParsing="false" onAction="#AcessarFuncionarios" prefHeight="25.0" prefWidth="100.0" text="Funcionarios" />
+            <Button fx:id="bProduto" mnemonicParsing="false" onAction="#AcessarProdutos" prefHeight="25.0" prefWidth="100.0" text="Produtos" />
+            <Button fx:id="bSair" mnemonicParsing="false" onAction="#Sair" prefHeight="25.0" prefWidth="100.0" text="Sair" />
+        </items>
+      </ToolBar>
+      <Label fx:id="mensagem" alignment="CENTER" layoutX="149.0" layoutY="101.0" prefHeight="27.0" prefWidth="302.0" text="Seja Bem Vindo">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <ImageView fitHeight="138.0" fitWidth="167.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagem/Palada.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

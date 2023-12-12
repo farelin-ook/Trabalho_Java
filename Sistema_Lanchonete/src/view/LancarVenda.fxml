@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LancarVendaController">
+   <children>
+      <TableView fx:id="tabela" layoutX="64.0" layoutY="79.0" prefHeight="200.0" prefWidth="340.0">
+        <columns>
+          <TableColumn fx:id="tProduto" prefWidth="134.0" text="Produto" />
+          <TableColumn fx:id="tCodigo" prefWidth="109.0" text="Codigo" />
+            <TableColumn fx:id="tPreco" prefWidth="96.0" text="Preço" />
+        </columns>
+      </TableView>
+      <Label layoutX="64.0" layoutY="26.0" text="Operador:" />
+      <TextField fx:id="tOperador" disable="true" editable="false" layoutX="118.0" layoutY="22.0" promptText="OPerador" />
+      <Label layoutX="213.0" layoutY="290.0" text="Total:R$" />
+      <TextField fx:id="tPrecoTotal" disable="true" editable="false" layoutX="255.0" layoutY="286.0" promptText="Total" />
+      <Label layoutX="465.0" layoutY="62.0" text="Produto" />
+      <TextField fx:id="CodProd" layoutX="412.0" layoutY="79.0" promptText="Cod" />
+      <Button fx:id="bAdcProd" layoutX="453.0" layoutY="113.0" mnemonicParsing="false" onAction="#aAdicionar" text="Adicionar" />
+      <Button fx:id="bVoltar" layoutX="38.0" layoutY="336.0" mnemonicParsing="false" onAction="#aVoltar" text="Voltar" />
+      <Button fx:id="bFinalizar" layoutX="456.0" layoutY="336.0" mnemonicParsing="false" onAction="#aFinalizar" text="Finalizar" />
+      <TextField fx:id="tPagamento" layoutX="411.0" layoutY="254.0" prefHeight="25.0" prefWidth="149.0" promptText="Pagamento" />
+   </children>
+</Pane>

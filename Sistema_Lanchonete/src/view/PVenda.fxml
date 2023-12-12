@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PVendaController">
+   <children>
+      <TableView fx:id="tabela" layoutX="14.0" layoutY="27.0" onMouseClicked="#cSelect" prefHeight="327.0" prefWidth="587.0">
+        <columns>
+          <TableColumn fx:id="tId" prefWidth="86.0" text="ID" />
+            <TableColumn fx:id="tVenda" prefWidth="105.0" text="Venda" />
+            <TableColumn fx:id="tValor" prefWidth="179.0" text="Valor" />
+            <TableColumn fx:id="tData" prefWidth="216.0" text="Data" />
+        </columns>
+      </TableView>
+      <TextField fx:id="pesquisa" layoutX="13.0" layoutY="2.0" prefHeight="25.0" prefWidth="520.0" promptText="pesquisar" />
+      <Button fx:id="bpesquisa" layoutX="533.0" layoutY="2.0" mnemonicParsing="false" onAction="#aPesquisar" text="Pesquisar" />
+      <Button fx:id="rmv" layoutX="445.0" layoutY="361.0" mnemonicParsing="false" onAction="#aRemover" text="Remover" />
+      <Button fx:id="adc" layoutX="370.0" layoutY="361.0" mnemonicParsing="false" onAction="#aAdicioinar" text="Adicionar" />
+      <Button fx:id="voltar" layoutX="525.0" layoutY="361.0" mnemonicParsing="false" onAction="#aVoltar" text="Voltar" />
+   </children>
+</Pane>
